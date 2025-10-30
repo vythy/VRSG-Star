@@ -1,0 +1,1 @@
+All maps were made by parsing osu beatmap files; https://osu.ppy.sh/beatmapsets
