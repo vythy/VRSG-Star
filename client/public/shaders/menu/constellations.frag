@@ -24,11 +24,11 @@ void main()
     {
         //find the whole-number star index
         w = round(i+t);
-        //square to prevent linear patterns. sin is a better alternative
+        //sine for pseudo randomness
         w *= sin(w); //sin(w)
         //pick a color using the index
         rgb += (cos(w+vec3(0,1,2))+1.)
-        //vary the brightness with the index
+        //vary the brightness with the index (twinkle)
         * exp(cos(w/.1)/.6)
         //fade in and out
         * min(1e3-i/.1+9.,i) / 5e4
